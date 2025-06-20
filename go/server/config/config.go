@@ -1,0 +1,11 @@
+package config
+
+import "os"
+
+var (
+	POSTGRES_DB_HOST = os.Getenv(`POSTGRES_DB_HOST`)
+	POSTGRES_DB_PORT = os.Getenv(`POSTGRES_DB_PORT`)
+	POSTGRES_DB_USER = os.Getenv(`POSTGRES_DB_USER`)
+	POSTGRES_DB_PASS = os.Getenv(`POSTGRES_DB_PASS`)
+	POSTGRES_DB_NAME = os.Getenv(`POSTGRES_DB_NAME`)
+)
